@@ -1,8 +1,30 @@
-import Counter from "../Counter/Counter";
+import { useState, useEffect } from "react";
+import { useTimeout } from "../../hooks/index.jsx";
+
 
 const App = () => {
+
+    const [delay, setDelay] = useState(2000);
+    const [callback, setCallback] = useState(() => {
+        return () => {
+            console.log("callback 1")
+        }
+    })
+
+    useEffect(() => {
+
+        setDelay(5000);
+        setCallback(() => {
+            return () => {
+                console.log("callback 2")
+            }
+        })
+    }, [])
+
+    useTimeout(callback, delay)
+
     return (
-        <Counter />
+        <h1>testing useTimeout hook</h1>
     )
 }
 
