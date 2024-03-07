@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useTimeout } from "../../hooks/index.jsx";
+import { useInterval } from "../../hooks/index.jsx";
 
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
         })
     }, [])
 
-    useTimeout(callback, delay)
+    useInterval(callback, delay)
 
     return (
         <h1>testing useTimeout hook</h1>
