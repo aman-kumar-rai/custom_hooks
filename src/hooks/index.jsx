@@ -4,6 +4,7 @@ import useInterval from "./useInterval/useInterval";
 import useIsFirstRender from "./useIsFirstRender/useIsFirstRender";
 import usePrevious from "./usePrevious/usePrevious";
 import useToggle from "./useToggle/useToggle";
+import useDebounce from "./useDebounce/useDebounce";
 
 export {
     useCount,
@@ -11,5 +12,6 @@ export {
     useInterval,
     useIsFirstRender,
     usePrevious,
-    useToggle
+    useToggle,
+    useDebounce
 }
