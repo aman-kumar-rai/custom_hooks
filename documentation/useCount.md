@@ -3,19 +3,20 @@ useCount hook wraps the bussion logic for a counter inside a custom hook.
 
 
 ### API signature
-useCount takes a config as input, and exposes an object as it's output.
-
 `const output = useCount(inputConfig)`
 
-The input config has following options:
+useCount takes a config as input, and exposes an object as it's output.
 
-    1. initialValue: The value to start the count state from, defaults to "0".
+#### Input: 
+    1. Config: an object with the following options:
 
-    2. step: The value by which to increment or decrement the count state, default to "1".
+        1. initialValue: The value to start the count state from, defaults to "0".
 
-    3. min: The minimum value possible for count state, defaults to "-Infinity".
+        2. step: The value by which to increment or decrement the count state, default to "1".
 
-    4. max: The maximum value possible for coun state, defaults to "+Infinity".
+        3. min: The minimum value possible for count state, defaults to "-Infinity".
+
+        4. max: The maximum value possible for coun state, defaults to "+Infinity".
 
 ### Sample code
 `   
