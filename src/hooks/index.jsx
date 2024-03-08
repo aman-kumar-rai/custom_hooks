@@ -7,6 +7,7 @@ import useToggle from "./useToggle/useToggle";
 import useDebounce from "./useDebounce/useDebounce";
 import useEffectOnce from "./useEffectOnce/useEffectOnce";
 import useIsMounted from "./useIsMounted/useIsMounted";
+import useClickOutside from "./useClickOutside/useClickOutside";
 
 export {
     useCount,
@@ -17,5 +18,6 @@ export {
     useToggle,
     useDebounce,
     useEffectOnce,
-    useIsMounted
+    useIsMounted,
+    useClickOutside
 }
