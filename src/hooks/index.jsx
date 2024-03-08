@@ -5,6 +5,7 @@ import useIsFirstRender from "./useIsFirstRender/useIsFirstRender";
 import usePrevious from "./usePrevious/usePrevious";
 import useToggle from "./useToggle/useToggle";
 import useDebounce from "./useDebounce/useDebounce";
+import useEffectOnce from "./useEffectOnce/useEffectOnce";
 
 export {
     useCount,
@@ -13,5 +14,6 @@ export {
     useIsFirstRender,
     usePrevious,
     useToggle,
-    useDebounce
+    useDebounce,
+    useEffectOnce
 }
