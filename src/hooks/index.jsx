@@ -6,6 +6,7 @@ import usePrevious from "./usePrevious/usePrevious";
 import useToggle from "./useToggle/useToggle";
 import useDebounce from "./useDebounce/useDebounce";
 import useEffectOnce from "./useEffectOnce/useEffectOnce";
+import useIsMounted from "./useIsMounted/useIsMounted";
 
 export {
     useCount,
@@ -15,5 +16,6 @@ export {
     usePrevious,
     useToggle,
     useDebounce,
-    useEffectOnce
+    useEffectOnce,
+    useIsMounted
 }
