@@ -1,16 +1,34 @@
-import { useClickOutside } from "../../hooks";
+import { useArray } from "../../hooks/index.jsx";
 
 const App = () => {
+    const {
+        value,
+        push,
+        removeByIndex
+    } = useArray([1, 2, 3]);
 
-    const ref = useClickOutside(() => {
-        console.log("How you doing?")
-    })
+    const handleClickAdd = () => {
+        push(Math.round(Math.random() * 100))
+    }
 
-    return <h1 style={{
-        border: "1px solid red",
-        backgroundColor: "dodgerblue",
-        color: "white"
-    }} ref={ref}>Custom Hooks</h1>
+    const handleClickRemove = () => {
+        const index = Math.round(Math.random() * (value.length - 1));
+        console.log(index);
+        removeByIndex(index);
+    }
+
+    return (
+        <div>
+            <h1>Custom Hooks</h1>
+            <ul>
+                {value.map(item => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
+            <button onClick={handleClickAdd}>Add</button>
+            <button onClick={handleClickRemove}>Remove random items</button>
+        </div>
+    )
 }
 
 export default App;

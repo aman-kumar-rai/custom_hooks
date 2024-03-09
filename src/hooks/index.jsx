@@ -8,6 +8,7 @@ import useDebounce from "./useDebounce/useDebounce";
 import useEffectOnce from "./useEffectOnce/useEffectOnce";
 import useIsMounted from "./useIsMounted/useIsMounted";
 import useClickOutside from "./useClickOutside/useClickOutside";
+import useArray from "./useArray/useArray";
 
 export {
     useCount,
@@ -19,5 +20,6 @@ export {
     useDebounce,
     useEffectOnce,
     useIsMounted,
-    useClickOutside
+    useClickOutside,
+    useArray
 }
