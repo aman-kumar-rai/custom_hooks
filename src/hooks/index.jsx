@@ -10,6 +10,7 @@ import useIsMounted from "./useIsMounted/useIsMounted";
 import useClickOutside from "./useClickOutside/useClickOutside";
 import useArray from "./useArray/useArray";
 import useFocus from "./useFocus/useFocus";
+import useUpdateEffect from "./useUpdateEffect/useUpdateEffect";
 
 export {
     useCount,
@@ -23,5 +24,6 @@ export {
     useIsMounted,
     useClickOutside,
     useArray,
-    useFocus
+    useFocus,
+    useUpdateEffect
 }
