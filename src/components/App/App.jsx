@@ -1,24 +1,18 @@
-// import { useEffect } from "react";
-import { useCount, useUpdateEffect } from "../../hooks/index.jsx";
+import { useHover } from "../../hooks/index.jsx";
 
 const App = () => {
 
-    const { count, increment, decrement } = useCount({
-        initialValue: 10
-    });
-
-    useUpdateEffect(() => {
-        console.log("Count got incremented")
-    }, [count])
-
+    const [ref, isHovered] = useHover();
 
     return (
-        <div>
-            <p>{count}</p>
-            <div>
-                <button onClick={increment}>+</button>
-                <button onClick={decrement}>-</button>
-            </div>
+        <div style={{
+            height: "200px",
+            backgroundColor: "dodgerblue",
+            color: "white"
+        }} ref={ref}>
+            {isHovered && (
+                <p>I am being hovered upon</p>
+            )}
         </div>
     )
 }

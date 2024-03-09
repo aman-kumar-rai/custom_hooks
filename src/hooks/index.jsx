@@ -11,6 +11,7 @@ import useClickOutside from "./useClickOutside/useClickOutside";
 import useArray from "./useArray/useArray";
 import useFocus from "./useFocus/useFocus";
 import useUpdateEffect from "./useUpdateEffect/useUpdateEffect";
+import useHover from "./useHover/useHover";
 
 export {
     useCount,
@@ -25,5 +26,6 @@ export {
     useClickOutside,
     useArray,
     useFocus,
-    useUpdateEffect
+    useUpdateEffect,
+    useHover
 }
